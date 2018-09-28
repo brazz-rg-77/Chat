@@ -1,0 +1,80 @@
+@charset "UTF-8";
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body{
+	background-color: #ff9004;
+}
+div#conteudo{
+	position: relative;
+	top: 25px;
+	width: 40%;
+	height: 500px;
+	background-color: #fff;
+	margin: auto;
+	padding: 20px;
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+}
+div#caixa-chat{
+	width: 100%;
+	height: 400px;
+}
+div#dados-chat{
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid silver;
+	font-weight: bold;
+	font-family: 'Mukta Vaani', sans-serif;
+}
+button{
+	width: 12%;
+	height: 40px;
+	float: left;
+	border: 1px solid grey;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: #4CAF50;
+    color: white;
+	margin-bottom: 3px;
+}
+button:hover{
+	opacity: 0.8;
+	border: 2px solid #ff9004;
+}
+button:focus{
+	border: 2px solid #ff9004;
+	outline: none;
+}
+textarea{
+	width: 83%;
+	float: left;
+	height: 40px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	outline: none;
+	margin-right: 5px;
+	margin-bottom: 3px;
+	font-family: 'Mukta Vaani', sans-serif;
+}
+textarea:hover, textarea:focus{
+	border: 2px solid #ff9004;
+	outline: none;
+}
+h2{
+	color: #ff9004;
+	font-family: 'Mukta Vaani', sans-serif;
+	font-weight: bold;
+}
+h1{
+	color: #ff9004;
+	font-family: 'Mukta Vaani', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	border-bottom: 2px solid #ff9004;
+}
