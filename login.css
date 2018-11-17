@@ -25,11 +25,22 @@ button, input[type=submit] {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 0;
     border: none;
     cursor: pointer;
     width: 100%;
-	border-radius: 100px;
+	border-radius: 5px;
+	outline: none;
+}
+button#login {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: -20px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+	border-radius: 5px;
 	outline: none;
 }
 
@@ -149,3 +160,59 @@ legend{
 	text-align: center;
 	font-size: 18pt;
 }
+.cabecalho-login{
+	background-color:#FF8100;
+	box-shadow:0 1px 1px #ccc;
+	padding: 20px 40px;
+	height: 80px;
+	width: 100%;
+	color: #ffffff;
+	box-sizing: border-box;
+}
+
+.cabecalho-login .cabecalho-limite {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* Logo */
+
+.cabecalho-login .cabecalho-limite h1{
+	float: left;
+	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	margin: 0;
+}
+
+.cabecalho-login .cabecalho-limite h1 span {
+	color: #5383d3;
+}
+
+.cabecalho-login .cabecalho-limite a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/* botão do login */
+
+.cabecalho-login .cabecalho-limite ul {
+	font: 14px Arial, Helvetica, sans-serif;
+	list-style: none;
+	line-height: 1;
+	float: right;
+}
+
+.cabecalho-login .cabecalho-limite ul li {
+	display: inline-block;
+	margin-left: 15px;
+	opacity:0.9;
+}
+
+body{
+	background-color: #FFF7F1;
+}
+/* botão cadastrar-se */
+
+
+

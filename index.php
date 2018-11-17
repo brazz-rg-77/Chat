@@ -11,26 +11,29 @@
 	<script src= "js/expandir.js"></script>
 </head>
 <body>
+	<header class="cabecalho-login">
+	<div class="cabecalho-limite">
 
-	<fieldset id="Login"><legend>Faça o login para acessar</legend>
 
-	<form method="post" id="fLogin" action="valida.php">
-		
-		<p><label for="matricula">Usuário:</label></br>
-		<input type="text" name="usuario" id= "matricula" size="20" maxlength="30" placeholder="Seu Usuário" required /></p>
-		<p><label for="senha">Senha:</label></br>
-		<input type="password" name="senha" id= "senha" size="8" maxlength="8" placeholder="8 dígitos" required /></p>
-		<p><label> <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Lembrar de mim </label></p>
-		
-		<input type="submit" name="nBotaoEntrar" value= "Entrar">
-		
-		<button onclick="document.getElementById('id01').style.display='block'">Cadastre-se</button>
-		</form></fieldset>
+		<h1><a href="#">OranGGe</a></h1>
+
+		<ul>
+			<li><button id="login" onclick="document.getElementById('id02').style.display='block'">Login</button></li>
+			<li><button id="login" onclick="document.getElementById('id01').style.display='block'">Cadastre-se</button></li>
+		</ul>
+
+	</div>
+
+</header>
+
 		
 <div id="id01" class="modal">
   
   <form method="POST" action="processa.php" class="modal-content animate">
    
+       <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" >&times;</span>
+    </div>
     <div class="container">
       <h1>Cadastro</h1>
       <hr>
@@ -55,6 +58,27 @@
     </div>
 
   </form>
+</div>
+<div id="id02" class="modal">
+	 <form method="POST" id="fLogin" action="valida.php" class="modal-content animate">
+		<div class="imgcontainer">
+			<span onclick="document.getElementById('id02').style.display='none'" class="close" >&times;</span>
+		</div>
+		<div class="container">
+			<h1>Login</h1>
+			<hr>
+		
+		<p><label for="matricula">Usuário:</label></br>
+		<input type="text" name="usuario" id= "matricula" size="20" maxlength="30" placeholder="Seu Usuário" required /></p>
+		<p><label for="senha">Senha:</label></br>
+		<input type="password" name="senha" id= "senha" size="8" maxlength="8" placeholder="8 dígitos" required /></p>
+		<p><label> <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Lembrar de mim </label></p>
+		<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancelar</button>
+		<input type="submit" name="nBotaoEntrar" value= "Entrar">
+		
+		
+		
+	 </form>
 </div>
 </body>
 </html>

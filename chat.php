@@ -9,6 +9,7 @@
 	<meta charset="UTF-8"/>
 	<title>Chat</title>
 	<link rel="stylesheet" href="estilos.css">
+	<link rel="shortcut icon" href="imagens/favicon.png"/>
 	<link href="https://fonts.googleapis.com/css?family=Mukta+Vaani" rel="stylesheet">
 	<script>
 		function nova(){
